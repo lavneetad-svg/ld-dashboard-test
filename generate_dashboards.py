@@ -1,8 +1,6 @@
 import pandas as pd
 import os
 
-os.makedirs("output", exist_ok=True)
-
 # PHASE 1
 df1 = pd.read_csv("phase1_baseline.csv")
 
