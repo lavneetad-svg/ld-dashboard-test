@@ -19,7 +19,7 @@ html1 = f"""
 {summary1.to_html(index=False)}
 """
 
-with open("output/phase1.html", "w") as f:
+with open("phase1.html", "w") as f:
     f.write(html1)
 
 
@@ -32,7 +32,7 @@ html2 = f"""
 {df2.groupby('module')['score'].mean().to_frame().to_html()}
 """
 
-with open("output/phase2.html", "w") as f:
+with open("phase2.html", "w") as f:
     f.write(html2)
 
 
@@ -48,7 +48,7 @@ html3 = f"""
 {theme_counts}
 """
 
-with open("output/phase3.html", "w") as f:
+with open("phase3.html", "w") as f:
     f.write(html3)
 
 
@@ -61,7 +61,7 @@ html4 = f"""
 <p>Avg Impact: {df4['impact_metric'].mean()}</p>
 """
 
-with open("output/phase4.html", "w") as f:
+with open("phase4.html", "w") as f:
     f.write(html4)
 
 print("Dashboards generated!")
